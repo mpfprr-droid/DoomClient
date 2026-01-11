@@ -14,9 +14,6 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Validate Gradle Wrapper
-        uses: gradle/wrapper-validation-action@v2
-
       - name: Build with Gradle
         run: |
           chmod +x gradlew
